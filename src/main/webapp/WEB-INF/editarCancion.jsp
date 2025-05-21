@@ -16,7 +16,8 @@
 				<h2> Editar canción </h2>
 			</div>
 			<div>
-			<form:form action="/canciones/procesa/editar/${cancion.id}" method="PUT" modelAttribute="cancion" class="formulario">
+			<form:form action="/canciones/procesa/editar/${cancion.id}" method="POST" modelAttribute="cancion" class="formulario">
+				<input type="hidden" name="_method" value="PUT">
 				<div class="datos">
 					<form:label path="titulo">
 						Título:
