@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.container{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.lista{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.detalle{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.tarjeta-cancion h3{
+	font-style: italic;
+}
+
+.tarjeta-cancion{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	background-color: rgb(219, 228, 234);
+	margin: 15px;
+	padding: 15px;
+	border-radius: 10px;
+	width: 250px;
+}
+
