@@ -16,4 +16,6 @@ public interface RepositorioCanciones extends CrudRepository<Cancion, Long>{
 	
 	Optional<Cancion> findById(Long id);
 	
+	Cancion save(Cancion cancionNueva);
+	
 }

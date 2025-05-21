@@ -22,6 +22,9 @@
 					</div>
 				</c:forEach>
 			</div>
+			<form action="/canciones/formulario/agregar/0" method="GET">
+				<button class="boton"><strong> Agregar </strong></button>
+			</form>
 		</div>
 		
 	</body>
