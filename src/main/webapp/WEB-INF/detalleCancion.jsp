@@ -15,7 +15,7 @@
 			<div class="detalle">
 				<div class="tarjeta-cancion">
 					<h3>${cancion.titulo}</h3>
-					<p><strong>Autor: </strong>${cancion.artista}</p>
+					<p><strong>Autor: </strong>${cancion.artista.nombre} ${cancion.artista.apellido}</p>
 					<p><strong>Álbum: </strong>${cancion.album}</p>
 					<p><strong>Género: </strong>${cancion.genero}</p>
 					<p><strong>Idioma: </strong>${cancion.idioma}</p>

@@ -22,35 +22,38 @@
 					<form:label path="titulo">
 						Título:
 					</form:label>
-					<form:input path="titulo" value="${cancion.titulo}"/>
+					<form:input path="titulo"/>
 					<form:errors path="titulo" />
 				</div>
 				<div class="datos">
-					<form:label path="artista">
-						Autor:
-					</form:label>
-					<form:input path="artista" value="${cancion.artista}"/>
-					<form:errors path="artista" />
+					<label id="idArtista"> Autor: </label>
+					<select name="artista.id">
+					    <c:forEach var="artista" items="${artistas}">
+					        <option value="${artista.id}">
+					            ${artista.nombre} ${artista.apellido}
+					        </option>
+					    </c:forEach>
+					</select>
 				</div>
 				<div class="datos">
 					<form:label path="album">
 						Álbum:
 					</form:label>
-					<form:input path="album" value="${cancion.album}"/>
+					<form:input path="album"/>
 					<form:errors path="album" />
 				</div>
 				<div class="datos">
 					<form:label path="genero">
 						Género:
 					</form:label>
-					<form:input path="genero" value="${cancion.genero}"/>
+					<form:input path="genero"/>
 					<form:errors path="genero" />
 				</div>
 				<div class="datos">
 					<form:label path="idioma">
 						Idioma:
 					</form:label>
-					<form:input path="idioma" value="${cancion.idioma}"/>
+					<form:input path="idioma" />
 					<form:errors path="idioma" />
 				</div>
 				<button class="boton">

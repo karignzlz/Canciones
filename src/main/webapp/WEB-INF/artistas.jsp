@@ -5,28 +5,26 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Canciones</title>
+		<title>Artistas</title>
 		<link href="/css/estilos.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class="container">
 			<div class="titulo">
-				<h1>Lista de canciones</h1>
+				<h1>Lista de artistas</h1>
 			</div>
 			<div class="lista">
-				<c:forEach var="cancion" items="${listaCanciones}">
-					<div class="tarjeta">
-						<h3> ${cancion.titulo} </h3>
-						<p><strong>Autor: </strong> ${cancion.artista.nombre} ${cancion.artista.apellido}</p>
-						<p><a href="/canciones/detalle/${cancion.id}"> Detalle </a></p>
-					</div>
-				</c:forEach>
+				<ul>
+			        <c:forEach var="artista" items="${listaArtistas}">
+			            <li><a href="/artistas/detalle/${artista.id}"> ${artista.nombre} ${artista.apellido} </a></li>
+			        </c:forEach>
+			    </ul>
 			</div>
-			<form action="/canciones/formulario/agregar/0" method="GET">
+			<form action="/artistas/formulario/agregar/0" method="GET">
 				<button class="boton"><strong> Agregar </strong></button>
 			</form>
 			<div>
-				<p><a href="/artistas"> Ir a artistas </a></p>
+				<p><a href="/canciones"> Ir a canciones </a></p>
 			</div>
 		</div>
 		
