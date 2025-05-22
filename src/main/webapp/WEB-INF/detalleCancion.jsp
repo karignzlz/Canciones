@@ -19,9 +19,15 @@
 					<p><strong>Álbum: </strong>${cancion.album}</p>
 					<p><strong>Género: </strong>${cancion.genero}</p>
 					<p><strong>Idioma: </strong>${cancion.idioma}</p>
-					<form action="/canciones/formulario/editar/${cancion.id}" method="GET">
-						<button class="boton"><strong>Editar</strong></button>
-					</form>
+					<div class="botones">
+						<form action="/canciones/formulario/editar/${cancion.id}" method="GET">
+							<button class="boton"><strong>Editar</strong></button>
+						</form>
+						<form action="/canciones/eliminar/${cancion.id}" method="POST">
+							<input type="hidden" name="_method" value="DELETE">
+							<button class="btn-eliminar"><strong>Eliminar</strong></button>
+						</form>
+					</div>
 					<p><a href="/canciones">Volver a lista de canciones</a></p>
 				</div>
 			</div>

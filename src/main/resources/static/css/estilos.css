@@ -56,6 +56,10 @@ body{
 	display: flex;
 	flex-direction: column;
 }
+.botones{
+	display: flex;
+	gap: 10px;
+}
 
 .boton{
 	border-radius: 10px;
@@ -63,4 +67,12 @@ body{
 	padding: 5px;
 	border: bold;
 	background-color: #4a90e2;
+}
+
+.btn-eliminar{
+	border-radius: 10px;
+	width: 80px;
+	padding: 5px;
+	border: bold;
+	background-color: #e57373;
 }
